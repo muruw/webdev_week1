@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+header h1 {
+  font-family: "Gentium Basic", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: grey;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: grey;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header .logo {
+  display: table;
+  width: 100%;
+}
+
+header .header-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 0 20px 0;
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+
+header nav ul li {
+  display:  inline-block;
+  padding: 16px 16px;
+}
+
+header nav ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: gray;
+}
+
+hr {
+  border-top: 2px solid grey;
+  width: 30%;
+  margin: 0 auto 5px;
+}
+
+.header-banner {
+  width: 100%;
+  height: calc(100vh - 500px);
+  background: url("img/header.jpg") no-repeat center;
+}
+
+.about-us h1 {
+  font-family: "Gentium Basic", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: grey;
+  padding: 5px 20px 0 20px;
+}
+
+.about-us p {
+  padding: 0 20px 0 20px;
+}
+
+.gallery-links h1 {
+  font-family: "Gentium Basic", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: grey;
+  padding: 5px 20px 0 20px;
+}
+.gallery-image {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  flex-basis: 300px;
+}
+
+.gallery-image img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.recipe-header {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 9px #111111;
+
+  /*positsioneerimine*/
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -moz-flex;
+  -moz-flex-flow: row wrap;
+  justify-content: center;
+  -o-flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  background-color: #999999;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.footer-info {
+  display: block;
+  padding: 0 0 10px 0;
+  float: left;
+}
+
+.footer-info p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.footer-sm {
+  width: 32px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-sm img {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 25px;
+}
+
+@media only screen and (min-width: 950px) {
+  hr {
+    display: none;
+  }
+
+  .header-about-us {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .header-banner {
+    width: 50%;
+  }
+
+  .about-us {
+    width: 50%;
+  }
+
+  .gallery {
+    justify-content: space-around;
+  }
+}
