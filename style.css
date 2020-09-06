@@ -64,6 +64,7 @@ hr {
   width: 100%;
   height: calc(100vh - 500px);
   background: url("img/header.jpg") no-repeat center;
+  background-size: contain;
 }
 
 .about-us h1 {
